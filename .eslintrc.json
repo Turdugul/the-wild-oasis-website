@@ -1,3 +1,23 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": ["tailwindcss"],
+  "rules": {
+    "prettier/prettier": [ { "endOfLine": "auto" }]
+  },
+  "settings": {
+    "tailwindcss": {
+      "callees": ["classnames", "ctl"],
+      "config": "tailwind.config.js",
+      "cssFiles": ["**/*.css", "**/*.scss", "**/*.html"],
+      "groupByResponsive": true,
+      "officialSorting": true,
+      "prependCustom": false,
+      "tags": ["tw", "tailwind"]
+    }
+  }
 }

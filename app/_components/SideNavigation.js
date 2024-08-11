@@ -5,8 +5,9 @@ import {
   HomeIcon,
   UserIcon,
 } from "@heroicons/react/24/solid";
-import SignOutButton from "./SignOutButton";
+
 import { usePathname } from "next/navigation";
+import SignOutButton from "@/app/_components/SignOutButton";
 
 const navLinks = [
   {
@@ -28,8 +29,7 @@ const navLinks = [
 
 function SideNavigation() {
   const pathname = usePathname()
-  
-  
+    
   return (
     <nav className="border-r border-primary-900">
       <ul className="flex flex-col gap-2 h-full text-lg">

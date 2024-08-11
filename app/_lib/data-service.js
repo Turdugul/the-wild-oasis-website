@@ -2,7 +2,6 @@ import { eachDayOfInterval } from 'date-fns';
 import { supabase } from './supabase';
 import { notFound } from 'next/navigation';
 
-/////////////
 // GET
 
 export async function getCabin(id) {
@@ -129,7 +128,7 @@ export async function getBookedDatesByCabinId(cabinId) {
 
 export async function getSettings() {
   const { data, error } = await supabase.from('settings').select('*').single();
-await new Promise((res) => setTimeout(res, 2000));
+// await new Promise((res) => setTimeout(res, 2000));
   if (error) {
     console.error(error);
     throw new Error('Settings could not be loaded');
@@ -150,8 +149,7 @@ export async function getCountries() {
   }
 }
 
-/////////////
-// CREATE
+
 
 export async function createGuest(newGuest) {
   const { data, error } = await supabase.from('guests').insert([newGuest]);
@@ -183,7 +181,7 @@ export async function createBooking(newBooking) {
 /////////////
 // UPDATE
 
-// The updatedFields is an object which should ONLY contain the updated data
+
 export async function updateGuest(id, updatedFields) {
   const { data, error } = await supabase
     .from('guests')
@@ -214,7 +212,7 @@ export async function updateBooking(id, updatedFields) {
   return data;
 }
 
-/////////////
+
 // DELETE
 
 export async function deleteBooking(id) {

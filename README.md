@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Wild Oasis Website
 
-## Getting Started
+The Wild Oasis Website is a modern, fully-featured web application built using the latest technologies in the Next.js ecosystem. This project leverages cutting-edge tools and best practices to deliver a seamless and efficient user experience.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js "App" Router**
+  - Implements the Next.js "app" router for better routing and layout handling.
+- **React Server Components**
+  - Optimizes performance with server-side rendering capabilities.
+- **Server Actions**
+  - Enables efficient and secure data handling on the server side.
+- **Authentication with NextAuth**
+  - Provides secure user authentication and session management.
+- **Supabase Integration**
+  - Uses Supabase as the backend for real-time data storage and management.
+- **Data Fetching, Caching, and Rendering**
+  - Efficiently fetches, caches, and renders data for a smooth user experience.
+- **Tailwind CSS for Styling**
+  - Creates a modern, responsive, and visually appealing design with utility-first styling.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Next.js**: Framework for building scalable web applications.
+- **React**: Library for building user interfaces.
+- **Supabase**: Backend-as-a-service for managing real-time databases.
+- **NextAuth**: Authentication library for handling secure login and session management.
+- **Tailwind CSS**: Utility-first CSS framework for custom, responsive design.

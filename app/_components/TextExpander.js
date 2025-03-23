@@ -13,10 +13,10 @@ function TextExpander({ children }) {
     : text.split(" ").slice(0, 40).join(" ") + "...";
 
   return (
-    <span>
+    <span className="text-sm sm:text-base">
       {displayText}{" "}
       <button
-        className="text-primary-700 border-b border-primary-700 leading-3 pb-1"
+        className="text-primary-700 border-b border-primary-700 leading-3 pb-1 text-sm sm:text-base hover:text-primary-900 hover:border-primary-900 transition-colors"
         onClick={() => setIsExpanded(!isExpanded)}
       >
         {isExpanded ? "Show less" : "Show more"}
